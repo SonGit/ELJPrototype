@@ -97,7 +97,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 933.3333, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0, y: 0.001953125}
   savedFill: 0
 --- !u!1 &9072556760074435807
 GameObject:
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cebca5fc9be5d141bddc64ee18ae610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playBnt: {fileID: 9072556760308661608}
+  obj: {fileID: 0}
 --- !u!114 &9072556760113719916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,7 +1170,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 933.3333, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0, y: 0.001953125}
   savedFill: 0
 --- !u!1 &9072556761445038894
 GameObject:
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cebca5fc9be5d141bddc64ee18ae610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playBnt: {fileID: 9072556760521103835}
+  obj: {fileID: 0}
 --- !u!114 &9072556761445038888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,7 +1786,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 933.3333, y: 150}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0, y: 0.0078125}
+  savedTextUV0: {x: 0, y: 0.001953125}
   savedFill: 0
 --- !u!1 &9072556761764648466
 GameObject:
@@ -1928,6 +1928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9324fdf3c411f3148af64757891e478f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  root: {fileID: 9072556760074435807}
+  loading: {fileID: 0}
 --- !u!1 &9072556761883923803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,7 +2068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cebca5fc9be5d141bddc64ee18ae610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playBnt: {fileID: 9072556760501796363}
+  obj: {fileID: 9072556760501796363}
 --- !u!114 &9072556761883923793
 MonoBehaviour:
   m_ObjectHideFlags: 0

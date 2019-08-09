@@ -18,7 +18,8 @@ public class Panel_01Menu : MonoBehaviour
     [SerializeField] private Text resultText;
 
     [Header("Question")]
-    [SerializeField] private Text questionText;
+    [SerializeField] private Text questionText_JP;
+    [SerializeField] private Text questionText_US;
 
     [Header("SaySomeThing_01")]
     [SerializeField] private Text answerText_01_JP;
@@ -86,17 +87,27 @@ public class Panel_01Menu : MonoBehaviour
         {
             case 1:
 
-                if (questionText != null) {
-                    questionText.text = "こんにちは";
+                if (questionText_JP != null) {
+                    questionText_JP.text = "こんにちは";
+                }
+
+                if (questionText_US != null)
+                {
+                    questionText_US.text = "Hello";
                 }
 
                 break;
 
             case 2:
 
-                if (questionText != null)
+                if (questionText_JP != null)
                 {
-                    questionText.text = "あなたの名前は何ですか";
+                    questionText_JP.text = "あなたの名前は何ですか";
+                }
+
+                if (questionText_US != null)
+                {
+                    questionText_US.text = "What is your name";
                 }
 
                 break;
