@@ -1208,12 +1208,7 @@ namespace CurvedUI
                     if (butt.name == "MicroPhoneBnt_Pause")
                     {
                         // Send the message to a specific sphere (by name)
-                        MessageDispatcher.SendMessage(this, EnumTypeMessage.MICROPHONE_PAUSE, "Pause", 0);
-                    }
-                    else if (gameObject.name == "MicroPhoneBnt_Play")
-                    {
-                        // Send the message to a specific sphere (by name)
-                        MessageDispatcher.SendMessage(this, EnumTypeMessage.MICROPHONE_PLAY, "Play", 0);
+                        MessageDispatcher.SendMessage(this, EnumTypeMessage.MICROPHONE_PAUSE, null, 0);
                     }
 
 

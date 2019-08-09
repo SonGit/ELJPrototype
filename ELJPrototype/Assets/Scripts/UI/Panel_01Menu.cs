@@ -11,10 +11,34 @@ public class Panel_01Menu : MonoBehaviour
     [SerializeField] private GameObject loadingObj;
     [SerializeField] private GameObject microPhoneBnt_PauseObj;
     [SerializeField] private GameObject microPhoneBnt_PlayObj;
-    [SerializeField] private Text resultText;
     
 
-    private void Awake()
+
+    [Header("Result")]
+    [SerializeField] private Text resultText;
+
+    [Header("Question")]
+    [SerializeField] private Text questionText;
+
+    [Header("SaySomeThing_01")]
+    [SerializeField] private Text answerText_01_JP;
+    [SerializeField] private Text answerText_01_US;
+
+    [Header("SaySomeThing_02")]
+    [SerializeField] private Text answerText_02_JP;
+    [SerializeField] private Text answerText_02_US;
+
+    [Header("SaySomeThing_03")]
+    [SerializeField] private Text answerText_03_JP;
+    [SerializeField] private Text answerText_03_US;
+
+    [Header("CheckBox")]
+    [SerializeField] private GameObject trueCheckBox;
+    [SerializeField] private GameObject falseCheckBox;
+
+    [SerializeField] private int currentQuestion;
+
+    void Awake()
     {
         instance = this;
     }
@@ -23,7 +47,7 @@ public class Panel_01Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetupInfo(1);
     }
 
     // Update is called once per frame
@@ -32,10 +56,117 @@ public class Panel_01Menu : MonoBehaviour
         
     }
 
-    public void OnMicroPhoneBnt_PlayMessageReceived(IMessage rMessage)
+    public void SetupInfo(int currentQuestion) {
+        switch (currentQuestion)
+        {
+            case 1: 
+                Debug.Log("Question 1............................................");
+                this.currentQuestion = currentQuestion;
+
+                break;
+
+            case 2:
+                Debug.Log("Question 2............................................");
+                this.currentQuestion = currentQuestion;
+
+                break;
+          
+            default:
+
+                break;
+        }
+
+        SetupQuestion(currentQuestion);
+
+        SetupAnswers(currentQuestion);
+    }
+
+    public void SetupQuestion(int currentQuestion) {
+        switch (currentQuestion)
+        {
+            case 1:
+
+                if (questionText != null) {
+                    questionText.text = "こんにちは";
+                }
+
+                break;
+
+            case 2:
+
+                if (questionText != null)
+                {
+                    questionText.text = "あなたの名前は何ですか";
+                }
+
+                break;
+
+            default:
+               
+
+                break;
+        }
+    }
+
+    public void SetupAnswers(int currentQuestion)
+    {
+        switch (currentQuestion)
+        {
+            case 1:
+
+                if (answerText_01_JP != null && answerText_01_US != null)
+                {
+                    answerText_01_JP.text = "こんにちは";
+                    answerText_01_US.text = "Hello";
+                }
+
+                if (answerText_02_JP != null && answerText_02_US != null)
+                {
+                    answerText_02_JP.text = "こんにちは";
+                    answerText_02_US.text = "Hello";
+                }
+
+                if (answerText_03_JP != null && answerText_03_US != null)
+                {
+                    answerText_03_JP.text = "こんにちは";
+                    answerText_03_US.text = "Hello";
+                }
+
+                break;
+
+            case 2:
+
+                if (answerText_01_JP != null && answerText_01_US != null)
+                {
+                    answerText_01_JP.text = "私の名前は...";
+                    answerText_01_US.text = "My name is...";
+                }
+
+                if (answerText_02_JP != null && answerText_02_US != null)
+                {
+                    answerText_02_JP.text = "私の名前は...";
+                    answerText_02_US.text = "My name is...";
+                }
+
+                if (answerText_03_JP != null && answerText_03_US != null)
+                {
+                    answerText_03_JP.text = "私の名前は...";
+                    answerText_03_US.text = "My name is...";
+                }
+
+                break;
+
+            default:
+
+
+                break;
+        }
+    }
+
+    public void OnMicroPhoneBnt_Play()
     {
         // See if the message passes in data
-        if (rMessage.Data != null && resultText != null)
+        if (resultText != null)
         {
             resultText.text = "Click To Start Recording";
         }
@@ -52,16 +183,12 @@ public class Panel_01Menu : MonoBehaviour
         {
             loadingObj.SetActive(false);
         }
-
-        // While not required, this is a good way to be tidy
-        // and let others know that the message has been handled
-        rMessage.IsHandled = true;
     }
 
     public void OnMicroPhoneBnt_PauseMessageReceived(IMessage rMessage)
     {
         // See if the message passes in data
-        if (rMessage.Data != null && resultText != null)
+        if (resultText != null)
         {
             resultText.text = "Say...............";
         }

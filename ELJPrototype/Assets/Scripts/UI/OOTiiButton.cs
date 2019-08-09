@@ -13,7 +13,7 @@ public class OOTiiButton : VR_FlashButton
 
         if (gameObject.name == "MicroPhoneBnt_Play" && Panel_01Menu.instance != null)
         {
-            MessageDispatcher.AddListener(EnumTypeMessage.MICROPHONE_PLAY, Panel_01Menu.instance.OnMicroPhoneBnt_PlayMessageReceived, true);
+           // MessageDispatcher.AddListener(EnumTypeMessage.MICROPHONE_PLAY, Panel_01Menu.instance.OnMicroPhoneBnt_PlayMessageReceived, true);
 
             gameObject.SetActive(false);
         }
