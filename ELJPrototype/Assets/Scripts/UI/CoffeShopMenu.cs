@@ -292,8 +292,21 @@ public class CoffeShopMenu : BasicMenu
 
         activity.Call("runOnUiThread", new AndroidJavaRunnable(runOnUiThread));
     }
+    void StopRecordUIThread()
+    {
+        AndroidJavaClass pluginClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject activity = pluginClass.GetStatic<AndroidJavaObject>("currentActivity");
+        activity.Call("stopSpeechInput");
+    }
 
-    
+    void StopRecord()
+    {
+        AndroidJavaClass pluginClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject activity = pluginClass.GetStatic<AndroidJavaObject>("currentActivity");
+
+        activity.Call("runOnUiThread", new AndroidJavaRunnable(StopRecordUIThread));
+    }
+
 
     public void SetTrueCheckBoxActive()
     {
@@ -354,7 +367,7 @@ public class CoffeShopMenu : BasicMenu
 
 
 #if UNITY_ANDROID && !UNITY_EDITOR
-            TaskOnClick();
+        TaskOnClick();
 #endif
 
     }
@@ -372,6 +385,10 @@ public class CoffeShopMenu : BasicMenu
 
         OnSetActive(recordBnt, false);
         OnSetActive(unrecordBnt, true);
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+         StopRecord();
+#endif
 
     }
 
