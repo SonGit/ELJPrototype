@@ -1211,6 +1211,30 @@ namespace CurvedUI
                         MessageDispatcher.SendMessage(this, EnumTypeMessage.MICROPHONE_PAUSE, null, 0);
                     }
 
+                    if (butt.name == "SettingBnt")
+                    {
+                        // Send the message to a specific sphere (by name)
+                        MessageDispatcher.SendMessage(this, EnumTypeMessage.GOTOSETTING, null, 0);
+                    }
+
+                    if (butt.name == "ExitBnt")
+                    {
+                        // Send the message to a specific sphere (by name)
+                        MessageDispatcher.SendMessage(this, EnumTypeMessage.EXITSETTING, null, 0);
+                    }
+
+                    if (butt.name == "RestartBnt")
+                    {
+                        // Send the message to a specific sphere (by name)
+                        MessageDispatcher.SendMessage(this, EnumTypeMessage.RESTART, null, 0);
+                    }
+
+                    //if (butt.name == "HomeBnt")
+                    //{
+                    //    // Send the message to a specific sphere (by name)
+                    //    MessageDispatcher.SendMessage(this, EnumTypeMessage.HOME, null, 0);
+                    //}
+
 
                 }
 
