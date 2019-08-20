@@ -7,11 +7,21 @@ using System.Linq;
 
 public class ReceiveResult : MonoBehaviour
 {
-    string[] answers1Array = { "こんにちは", "今日は" };
-    string[] answers2Array = { "すみませんコーヒーにします" };
-    string[] answers3Array = { "ハンバーガーーつお願いします" };
-    string[] answers4Array = { "はいありがとうございます" };
+    string[] coffeShop_Answers1 = { "こんにちは", "今日は" };
+    string[] coffeShop_Answers2 = { "すみませんコーヒーにします" };
+    string[] coffeShop_Answers3 = { "ハンバーガー一つお願いします" };
+    string[] coffeShop_Answers4 = { "はいありがとうございます" };
 
+
+    string[] bank_Answers1 = { "こんにちは", "今日は" };
+    string[] bank_Answers2 = { "すみません預金口座を作りたいのですが" };
+    string[] bank_Answers3 = { "はいそうです" }; 
+    string[] bank_Answers4 = { "はいわかりました" };
+    string[] bank_Answers5 = { "はいありがとうございます" };
+
+    private bool stringExists;
+
+    [SerializeField] private BasicMenu basicMenu;
 
     // Use this for initialization
     void Start()
@@ -22,7 +32,19 @@ public class ReceiveResult : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (basicMenu == null)
+        {
+            if (CoffeShopMenu.Instance != null)
+            {
+                basicMenu = CoffeShopMenu.Instance;
+            }
 
+            if (BankMenu.Instance != null)
+            {
+                basicMenu = BankMenu.Instance;
+            }
+
+        }
     }
 
     void onActivityResult(string recognizedText)
@@ -30,79 +52,168 @@ public class ReceiveResult : MonoBehaviour
 
         Debug.Log("++++++++++++++++++++onActivityResult" + recognizedText);
 
-        if (CoffeShopMenu.instance != null)
+        if (basicMenu != null)
         {
-            CoffeShopMenu.instance.OnDisableAnswersUI();
-            CoffeShopMenu.instance.OnEnableResultUI();
-            CoffeShopMenu.instance.OnDisableNextQuestionBnt();
-            CoffeShopMenu.instance.RecordBnt_Onclick();
+            basicMenu.OnDisableNextQuestionBnt();
+            basicMenu.RecordBnt_Onclick();
 
-            CoffeShopMenu.instance.result.text = recognizedText;
+            basicMenu.OnEnableResultUI();
 
-            CoffeShopMenu.instance.SetFalseCheckBoxActive();
+            basicMenu.result.text = recognizedText;
+
+            basicMenu.SetFalseCheckBoxActive();
 
             // Go to Question 2
-            if (CoffeShopMenu.instance.currentQuestion == 1)
+            if (basicMenu.currentQuestion == 1)
             {
-                bool stringExists = answers1Array.Contains(recognizedText);
+                if (basicMenu is CoffeShopMenu) {
+                    stringExists = coffeShop_Answers1.Contains(recognizedText);
+                }
+
+                if (basicMenu is BankMenu)
+                {
+                    stringExists = bank_Answers1.Contains(recognizedText);
+                }
+
                 if (stringExists)
                 {
 
                     Debug.Log("Setup++++++++++++++++++++++++++++++ CurrentQuestion: " + "1");
 
-                    CoffeShopMenu.instance.SetTrueCheckBoxActive();
+                    RightAnswer();
 
-                    CoffeShopMenu.instance.OnEnableNextQuestionBnt();
+                    basicMenu.OnEnableNextQuestionBnt();
 
                 }
+                else
+                {
+                    WrongAnswer();
+                }
+
             }
 
             // Go to Question 3
-            if (CoffeShopMenu.instance.currentQuestion == 2)
+            if (basicMenu.currentQuestion == 2)
             {
-                bool stringExists = answers2Array.Contains(recognizedText);
+                if (basicMenu is CoffeShopMenu)
+                {
+                    stringExists = coffeShop_Answers2.Contains(recognizedText);
+                }
+
+                if (basicMenu is BankMenu)
+                {
+                    stringExists = bank_Answers2.Contains(recognizedText);
+                }
+
                 if (stringExists)
                 {
 
                     Debug.Log("Setup++++++++++++++++++++++++++++++ CurrentQuestion: " + "2");
 
-                    CoffeShopMenu.instance.SetTrueCheckBoxActive();
+                    RightAnswer();
 
-                    CoffeShopMenu.instance.OnEnableNextQuestionBnt();
+                    basicMenu.OnEnableNextQuestionBnt();
 
+                }
+                else
+                {
+                    WrongAnswer();
                 }
             }
 
             // Go to Question 4
-            if (CoffeShopMenu.instance.currentQuestion == 3)
+            if (basicMenu.currentQuestion == 3)
             {
-                bool stringExists = answers3Array.Contains(recognizedText);
+                if (basicMenu is CoffeShopMenu)
+                {
+                    stringExists = coffeShop_Answers3.Contains(recognizedText);
+                }
+
+                if (basicMenu is BankMenu)
+                {
+                    stringExists = bank_Answers3.Contains(recognizedText);
+                }
+
+
                 if (stringExists)
                 {
 
                     Debug.Log("Setup++++++++++++++++++++++++++++++ CurrentQuestion: " + "3");
 
-                    CoffeShopMenu.instance.SetTrueCheckBoxActive();
+                    RightAnswer();
 
-                    CoffeShopMenu.instance.OnEnableNextQuestionBnt();
+                    basicMenu.OnEnableNextQuestionBnt();
 
+                }
+                else
+                {
+                    WrongAnswer();
                 }
             }
 
-            // Completed
-            if (CoffeShopMenu.instance.currentQuestion == 4)
+            // Go to Question 5
+            if (basicMenu.currentQuestion == 4)
             {
-                bool stringExists = answers4Array.Contains(recognizedText);
+                if (basicMenu is CoffeShopMenu)
+                {
+                    stringExists = coffeShop_Answers4.Contains(recognizedText);
+                }
+
+                if (basicMenu is BankMenu)
+                {
+                    stringExists = bank_Answers4.Contains(recognizedText);
+                }
+
                 if (stringExists)
                 {
+                    RightAnswer();
 
-                    Debug.Log("Setup++++++++++++++++++++++++++++++ CurrentQuestion: " + "Completed");
+                    if (basicMenu is CoffeShopMenu)
+                    {
+                        Debug.Log("Setup++++++++++++++++++++++++++++++ : " + "Completed");
 
-                    CoffeShopMenu.instance.SetTrueCheckBoxActive();
+                        basicMenu.GoToCompleteMenu();
 
-                    CoffeShopMenu.instance.GoToCompleteMenu();
+                    }
+
+                    if (basicMenu is BankMenu)
+                    {
+                        basicMenu.OnEnableNextQuestionBnt();
+                    }
 
                 }
+                else
+                {
+                    WrongAnswer();
+                }
+
+            }
+
+            // Go to Question 6
+            if (basicMenu.currentQuestion == 5)
+            {
+                if (basicMenu is BankMenu)
+                {
+                    stringExists = bank_Answers5.Contains(recognizedText);
+                }
+
+                if (stringExists)
+                {
+                    RightAnswer();
+
+                    if (basicMenu is BankMenu)
+                    {
+                        Debug.Log("Setup++++++++++++++++++++++++++++++ : " + "Completed");
+
+                        basicMenu.GoToCompleteMenu();
+                    }
+
+                }
+                else
+                {
+                    WrongAnswer();
+                }
+
             }
         }
     }
@@ -112,16 +223,25 @@ public class ReceiveResult : MonoBehaviour
 
         Debug.Log("++++++++++++++++++++Errror" + errorCode);
 
-        if (CoffeShopMenu.instance != null)
+        if (basicMenu != null)
         {
-            //CoffeShopMenu.instance.SetupInfo(Panel_01Menu.instance.currentQuestion, Panel_01Menu.instance.currentkey);
-
-            CoffeShopMenu.instance.RecordBnt_Onclick();
-
-            CoffeShopMenu.instance.OnDisableNextQuestionBnt();
+            basicMenu.RecordBnt_Onclick();
         }
 
     }
 
-    
+
+    public void RightAnswer() {
+
+        basicMenu.SetTrueCheckBoxActive();
+
+        basicMenu.female_Animator.SetTrigger("AgreeTrigger");
+    }
+
+    public void WrongAnswer()
+    {
+        basicMenu.female_Animator.SetTrigger("DenyTrigger");
+    }
+
+   
 }

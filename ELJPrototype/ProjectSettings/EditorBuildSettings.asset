@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/App/Scenes/Start.unity
+    guid: b34bf25fb046edc45a471b85c2a2ca92
   - enabled: 1
     path: Assets/App/Scenes/Main.unity
     guid: 36772eeac1ef24d45a8416aa374270d0
   - enabled: 1
-    path: Assets/Scenes/Panel_01.unity
-    guid: 640900a7b113807428b39061b7a95d75
+    path: Assets/Scenes/CoffeShopMenu_2D.unity
+    guid: 7bece42efc4a3e4419cedaf7e4f0c75f
+  - enabled: 1
+    path: Assets/Scenes/BankMenu_2D.unity
+    guid: 46481c7f1b92a0448bb200d1ccfe4633
   m_configObjects: {}

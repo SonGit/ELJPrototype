@@ -4,6 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : Singleton<ScenesManager>
 {
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void LoadScene(string nameScene)
     {
         StartCoroutine(LoadSceneAsync(nameScene));

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.UI;
 
 public class SplashPanel : BasicPanel
@@ -25,6 +26,11 @@ public class SplashPanel : BasicPanel
         });
 
         SetActive(true);
+
+        if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
+        {
+            Permission.RequestUserPermission(Permission.Microphone);
+        }
     }
 
     private IEnumerator AnimStartAsync()
