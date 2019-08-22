@@ -109,6 +109,8 @@ public class BasicMenu : Singleton<BasicMenu>
 
     private void Init()
     {
+        Hello();
+
         OnDisableSettingMenu();
 
         RecordBnt_Onclick();
@@ -259,6 +261,14 @@ public class BasicMenu : Singleton<BasicMenu>
     {
         int nextQuestion = _currentQuestion + 1;
         SetupInfos(nextQuestion);
+    }
+
+    public void Hello()
+    {
+        if (femaleAnimator != null) {
+            femaleAnimator.SetTrigger("HelloTrigger");
+        }
+        
     }
 
     protected virtual void SetupInfos(int currentQuestion)

@@ -50,7 +50,7 @@ public class BasicMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-#if UNITY_EDITOR || UNITY_STANDALONE_WIN || UNITY_WEBGL
+#if UNITY_ANDROID || UNITY_EDITOR || UNITY_STANDALONE_WIN || UNITY_WEBGL
         _enter = true;
         _exit = false;
 #endif
@@ -58,7 +58,7 @@ public class BasicMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerExit(PointerEventData eventData)
     {
-#if UNITY_EDITOR || UNITY_STANDALONE_WIN || UNITY_WEBGL
+#if UNITY_ANDROID || UNITY_EDITOR || UNITY_STANDALONE_WIN || UNITY_WEBGL
         _enter = false;
         _exit = true;
 #endif

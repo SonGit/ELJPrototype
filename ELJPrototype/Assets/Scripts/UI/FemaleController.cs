@@ -27,7 +27,7 @@ public class FemaleController : Singleton<FemaleController>
         eye_currentTime += Time.deltaTime;
         mouth_currentTime += Time.deltaTime;
 
-        if (gameObject.GetComponentInParent<FemaleController>().name == "Female_coffe_motion" && eye_currentTime > eye_TimeCheck)
+        if (gameObject.name == "Female_coffe_motion" && eye_currentTime > eye_TimeCheck)
         {
             eye_TimeCheck = Random.Range(4f, 6f);
             eye_currentTime = 0;
@@ -35,7 +35,7 @@ public class FemaleController : Singleton<FemaleController>
             
         }
 
-        if (gameObject.GetComponentInParent<FemaleController>().name == "Female_bank_motion" && eye_currentTime > eye_TimeCheck)
+        if (gameObject.name == "Female_bank_motion" && eye_currentTime > eye_TimeCheck)
         {
             eye_TimeCheck = Random.Range(4f, 6f);
             eye_currentTime = 0;
@@ -43,14 +43,14 @@ public class FemaleController : Singleton<FemaleController>
         }
 
 
-        if (gameObject.GetComponentInParent<FemaleController>().name == "Female_coffe_motion" && isPlayMouthAnimation && mouth_currentTime > mouth_TimeCheck)
+        if (gameObject.name == "Female_coffe_motion" && isPlayMouthAnimation && mouth_currentTime > mouth_TimeCheck)
         {
             mouth_currentTime = 0;
             StartCoroutine(FemaleCoffe_MouthAnimation());
 
         }
 
-        if (gameObject.GetComponentInParent<FemaleController>().name == "Female_bank_motion" && isPlayMouthAnimation && mouth_currentTime > mouth_TimeCheck)
+        if (gameObject.name == "Female_bank_motion" && isPlayMouthAnimation && mouth_currentTime > mouth_TimeCheck)
         {
             mouth_currentTime = 0;
             StartCoroutine(FemaleBank_MouthAnimation());
@@ -100,7 +100,7 @@ public class FemaleController : Singleton<FemaleController>
 
             yield return new WaitForSeconds(0.2f);
 
-            blendShapes.SetBlendShapeWeight(2, 40);
+            blendShapes.SetBlendShapeWeight(2, 70);
 
             yield return new WaitForSeconds(0.2f);
 
@@ -157,7 +157,7 @@ public class FemaleController : Singleton<FemaleController>
 
             yield return new WaitForSeconds(0.2f);
 
-            blendShapes.SetBlendShapeWeight(1, 40);
+            blendShapes.SetBlendShapeWeight(1, 70);
 
             yield return new WaitForSeconds(0.2f);
 
