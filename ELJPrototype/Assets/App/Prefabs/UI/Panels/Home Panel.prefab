@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -556}
-  m_SizeDelta: {x: 460, y: 136}
+  m_AnchoredPosition: {x: 270, y: -682}
+  m_SizeDelta: {x: 460, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &261264187
 CanvasRenderer:
@@ -462,8 +462,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -712}
-  m_SizeDelta: {x: 460, y: 136}
+  m_AnchoredPosition: {x: 270, y: -874}
+  m_SizeDelta: {x: 460, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1784100341
 CanvasRenderer:
@@ -986,8 +986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -400}
-  m_SizeDelta: {x: 460, y: 136}
+  m_AnchoredPosition: {x: 270, y: -490}
+  m_SizeDelta: {x: 460, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222949328284070284
 CanvasRenderer:
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3882353, g: 0.3882353, b: 0.3882353, a: 1}
+  m_Color: {r: 0.13363297, g: 0.3638818, b: 0.8584906, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1061,11 +1061,22 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 114807592089879110}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114368766989251196}
+        m_MethodName: LoadSceneHotel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1294554300114144
@@ -1519,7 +1530,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 10, y: 40}
-  m_SizeDelta: {x: 64, y: 64}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &222757182479175706
 CanvasRenderer:
@@ -1542,16 +1553,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3882353, g: 0.3882353, b: 0.3882353, a: 1}
+  m_Color: {r: 0.9339623, g: 0.6828498, b: 0.6828498, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bb57cd1bab8f79646baaa1834ba86c4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cca391828b4555a419e158388511acfd, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1595,8 +1606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -244}
-  m_SizeDelta: {x: 460, y: 136}
+  m_AnchoredPosition: {x: 270, y: -298}
+  m_SizeDelta: {x: 460, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222482153114020466
 CanvasRenderer:
@@ -2356,7 +2367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6627451, g: 0.6627451, b: 0.6627451, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2376,7 +2387,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: COMING SOON...
+  m_Text: HOTEL
 --- !u!1 &1854084229527394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,8 +2425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 270, y: -88}
-  m_SizeDelta: {x: 460, y: 136}
+  m_AnchoredPosition: {x: 270, y: -106}
+  m_SizeDelta: {x: 460, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222006146286422424
 CanvasRenderer:

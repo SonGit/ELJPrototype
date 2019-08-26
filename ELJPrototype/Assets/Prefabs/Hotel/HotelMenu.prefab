@@ -116,7 +116,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1392319076734629902}
         m_MethodName: NextQuestionBnt_OnClick
         m_Mode: 1
         m_Arguments:
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1392319076734629902}
         m_MethodName: RecordBnt_Onclick
         m_Mode: 1
         m_Arguments:
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1392319076734629902}
         m_MethodName: UnrecordBnt_Onclick
         m_Mode: 1
         m_Arguments:
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1392319076734629902}
         m_MethodName: OnEnableSettingMenu
         m_Mode: 1
         m_Arguments:

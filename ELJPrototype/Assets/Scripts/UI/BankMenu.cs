@@ -63,7 +63,7 @@ public class BankMenu : BasicMenu
 
             default:
 
-                SetupQuestion("こんにちは", "Kon'nichiwa");
+                RestartAll();
 
                 break;
         }
@@ -114,8 +114,6 @@ public class BankMenu : BasicMenu
                 break;
 
             default:
-
-                SetupAnswer("こんにちは", "Kon'nichiwa");
 
                 break;
         }

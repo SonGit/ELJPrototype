@@ -121,6 +121,11 @@ public class BasicMenu : Singleton<BasicMenu>
 
         SetupInfos(_currentQuestion);
 
+        if (CameraControl.Instance != null)
+        {
+            CameraControl.Instance.ResetCameraDefault();
+        }
+
     }
 
     public void UnrecordBnt_Onclick()

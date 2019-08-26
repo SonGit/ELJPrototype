@@ -19,6 +19,12 @@ public class ReceiveResult : MonoBehaviour
     string[] bank_Answers4 = { "はいわかりました" };
     string[] bank_Answers5 = { "はいありがとうございます" };
 
+
+    string[] hotel_Answers1 = { "こんにちは", "今日は" };
+    string[] hotel_Answers2 = { "一室を借りたいです" };
+    string[] hotel_Answers3 = { "大きい部屋を借りたいです" };
+    string[] hotel_Answers4 = { "はいありがとうございます" };
+
     private bool stringExists;
 
     [SerializeField] private BasicMenu basicMenu;
@@ -42,6 +48,11 @@ public class ReceiveResult : MonoBehaviour
             if (BankMenu.Instance != null)
             {
                 basicMenu = BankMenu.Instance;
+            }
+
+            if (HotelMenu.Instance != null)
+            {
+                basicMenu = HotelMenu.Instance;
             }
 
         }
@@ -75,6 +86,11 @@ public class ReceiveResult : MonoBehaviour
                     stringExists = bank_Answers1.Contains(recognizedText);
                 }
 
+                if (basicMenu is HotelMenu)
+                {
+                    stringExists = hotel_Answers1.Contains(recognizedText);
+                }
+
                 if (stringExists)
                 {
 
@@ -105,6 +121,11 @@ public class ReceiveResult : MonoBehaviour
                     stringExists = bank_Answers2.Contains(recognizedText);
                 }
 
+                if (basicMenu is HotelMenu)
+                {
+                    stringExists = hotel_Answers2.Contains(recognizedText);
+                }
+
                 if (stringExists)
                 {
 
@@ -132,6 +153,11 @@ public class ReceiveResult : MonoBehaviour
                 if (basicMenu is BankMenu)
                 {
                     stringExists = bank_Answers3.Contains(recognizedText);
+                }
+
+                if (basicMenu is HotelMenu)
+                {
+                    stringExists = hotel_Answers3.Contains(recognizedText);
                 }
 
 
@@ -164,6 +190,12 @@ public class ReceiveResult : MonoBehaviour
                     stringExists = bank_Answers4.Contains(recognizedText);
                 }
 
+                if (basicMenu is HotelMenu)
+                {
+                    stringExists = hotel_Answers4.Contains(recognizedText);
+                }
+
+
                 if (stringExists)
                 {
                     RightAnswer();
@@ -179,6 +211,14 @@ public class ReceiveResult : MonoBehaviour
                     if (basicMenu is BankMenu)
                     {
                         basicMenu.OnEnableNextQuestionBnt();
+                    }
+
+                    if (basicMenu is HotelMenu)
+                    {
+                        Debug.Log("Setup++++++++++++++++++++++++++++++ : " + "Completed");
+
+                        basicMenu.GoToCompleteMenu();
+
                     }
 
                 }

@@ -30,6 +30,62 @@ ModelImporter:
     100048: bank_office_furniture_25
     100050: bank_office_furniture_26
     100052: bank_office_wall
+    100054: bank_office_bank_office_furniture_01_bank_office_furniture
+    100056: bank_office_bank_office_furniture_bank_office_furniture_02
+    100058: bank_office_bank_office_furniture_bank_office_furniture_027
+    100060: bank_office_bank_office_furniture_bank_office_furniture_03
+    100062: bank_office_bank_office_furniture_bank_office_furniture_04
+    100064: bank_office_bank_office_furniture_bank_office_furniture_05
+    100066: bank_office_bank_office_furniture_bank_office_furniture_06
+    100068: bank_office_bank_office_furniture_bank_office_furniture_07
+    100070: bank_office_bank_office_furniture_bank_office_furniture_08
+    100072: bank_office_bank_office_furniture_bank_office_furniture_09
+    100074: bank_office_bank_office_furniture_bank_office_furniture_10
+    100076: bank_office_bank_office_furniture_bank_office_furniture_11
+    100078: bank_office_bank_office_furniture_bank_office_furniture_12
+    100080: bank_office_bank_office_furniture_bank_office_furniture_13
+    100082: bank_office_bank_office_furniture_bank_office_furniture_14
+    100084: bank_office_bank_office_furniture_bank_office_furniture_15
+    100086: bank_office_bank_office_furniture_bank_office_furniture_16
+    100088: bank_office_bank_office_furniture_bank_office_furniture_17
+    100090: bank_office_bank_office_furniture_bank_office_furniture_18
+    100092: bank_office_bank_office_furniture_bank_office_furniture_19
+    100094: bank_office_bank_office_furniture_bank_office_furniture_20
+    100096: bank_office_bank_office_furniture_bank_office_furniture_21
+    100098: bank_office_bank_office_furniture_bank_office_furniture_23
+    100100: bank_office_bank_office_furniture_bank_office_furniture_24
+    100102: bank_office_bank_office_furniture_bank_office_furniture_25
+    100104: bank_office_bank_office_furniture_bank_office_furniture_26
+    100106: bank_office_wall_bank_office
+    100108: Box001
+    100110: Box003
+    100112: Box005
+    100114: Box006
+    100116: Box007
+    100118: Cylinder009
+    100120: Cylinder010
+    100122: Cylinder011
+    100124: Cylinder012
+    100126: Cylinder013
+    100128: Cylinder014
+    100130: furniture
+    100132: Line001
+    100134: Line002
+    100136: Line003
+    100138: Line004
+    100140: Object009
+    100142: Object010
+    100144: Object011
+    100146: Object012
+    100148: Plane001
+    100150: Plane002
+    100152: Plane003
+    100154: Plane004
+    100156: Plane005
+    100158: Plane006
+    100160: Plane007
+    100162: plant
+    100164: wall
     400000: //RootNode
     400002: bank_office_chair
     400004: bank_office_chair1
@@ -57,8 +113,66 @@ ModelImporter:
     400048: bank_office_furniture_25
     400050: bank_office_furniture_26
     400052: bank_office_wall
+    400054: bank_office_bank_office_furniture_01_bank_office_furniture
+    400056: bank_office_bank_office_furniture_bank_office_furniture_02
+    400058: bank_office_bank_office_furniture_bank_office_furniture_027
+    400060: bank_office_bank_office_furniture_bank_office_furniture_03
+    400062: bank_office_bank_office_furniture_bank_office_furniture_04
+    400064: bank_office_bank_office_furniture_bank_office_furniture_05
+    400066: bank_office_bank_office_furniture_bank_office_furniture_06
+    400068: bank_office_bank_office_furniture_bank_office_furniture_07
+    400070: bank_office_bank_office_furniture_bank_office_furniture_08
+    400072: bank_office_bank_office_furniture_bank_office_furniture_09
+    400074: bank_office_bank_office_furniture_bank_office_furniture_10
+    400076: bank_office_bank_office_furniture_bank_office_furniture_11
+    400078: bank_office_bank_office_furniture_bank_office_furniture_12
+    400080: bank_office_bank_office_furniture_bank_office_furniture_13
+    400082: bank_office_bank_office_furniture_bank_office_furniture_14
+    400084: bank_office_bank_office_furniture_bank_office_furniture_15
+    400086: bank_office_bank_office_furniture_bank_office_furniture_16
+    400088: bank_office_bank_office_furniture_bank_office_furniture_17
+    400090: bank_office_bank_office_furniture_bank_office_furniture_18
+    400092: bank_office_bank_office_furniture_bank_office_furniture_19
+    400094: bank_office_bank_office_furniture_bank_office_furniture_20
+    400096: bank_office_bank_office_furniture_bank_office_furniture_21
+    400098: bank_office_bank_office_furniture_bank_office_furniture_23
+    400100: bank_office_bank_office_furniture_bank_office_furniture_24
+    400102: bank_office_bank_office_furniture_bank_office_furniture_25
+    400104: bank_office_bank_office_furniture_bank_office_furniture_26
+    400106: bank_office_wall_bank_office
+    400108: Box001
+    400110: Box003
+    400112: Box005
+    400114: Box006
+    400116: Box007
+    400118: Cylinder009
+    400120: Cylinder010
+    400122: Cylinder011
+    400124: Cylinder012
+    400126: Cylinder013
+    400128: Cylinder014
+    400130: furniture
+    400132: Line001
+    400134: Line002
+    400136: Line003
+    400138: Line004
+    400140: Object009
+    400142: Object010
+    400144: Object011
+    400146: Object012
+    400148: Plane001
+    400150: Plane002
+    400152: Plane003
+    400154: Plane004
+    400156: Plane005
+    400158: Plane006
+    400160: Plane007
+    400162: plant
+    400164: wall
     2100000: bank_office_wall_mat
     2100002: bank_office_furniture_mat
+    2100004: wall_mat
+    2100006: furniture_mat
     2300000: bank_office_chair
     2300002: bank_office_chair1
     2300004: bank_office_furniture_01
@@ -84,6 +198,60 @@ ModelImporter:
     2300044: bank_office_furniture_25
     2300046: bank_office_furniture_26
     2300048: bank_office_wall
+    2300050: bank_office_bank_office_furniture_01_bank_office_furniture
+    2300052: bank_office_bank_office_furniture_bank_office_furniture_02
+    2300054: bank_office_bank_office_furniture_bank_office_furniture_027
+    2300056: bank_office_bank_office_furniture_bank_office_furniture_03
+    2300058: bank_office_bank_office_furniture_bank_office_furniture_04
+    2300060: bank_office_bank_office_furniture_bank_office_furniture_05
+    2300062: bank_office_bank_office_furniture_bank_office_furniture_06
+    2300064: bank_office_bank_office_furniture_bank_office_furniture_07
+    2300066: bank_office_bank_office_furniture_bank_office_furniture_08
+    2300068: bank_office_bank_office_furniture_bank_office_furniture_09
+    2300070: bank_office_bank_office_furniture_bank_office_furniture_10
+    2300072: bank_office_bank_office_furniture_bank_office_furniture_11
+    2300074: bank_office_bank_office_furniture_bank_office_furniture_12
+    2300076: bank_office_bank_office_furniture_bank_office_furniture_13
+    2300078: bank_office_bank_office_furniture_bank_office_furniture_14
+    2300080: bank_office_bank_office_furniture_bank_office_furniture_15
+    2300082: bank_office_bank_office_furniture_bank_office_furniture_16
+    2300084: bank_office_bank_office_furniture_bank_office_furniture_17
+    2300086: bank_office_bank_office_furniture_bank_office_furniture_18
+    2300088: bank_office_bank_office_furniture_bank_office_furniture_19
+    2300090: bank_office_bank_office_furniture_bank_office_furniture_20
+    2300092: bank_office_bank_office_furniture_bank_office_furniture_21
+    2300094: bank_office_bank_office_furniture_bank_office_furniture_23
+    2300096: bank_office_bank_office_furniture_bank_office_furniture_24
+    2300098: bank_office_bank_office_furniture_bank_office_furniture_25
+    2300100: bank_office_bank_office_furniture_bank_office_furniture_26
+    2300102: bank_office_wall_bank_office
+    2300104: Box001
+    2300106: Box003
+    2300108: Box005
+    2300110: Box006
+    2300112: Box007
+    2300114: Cylinder009
+    2300116: Cylinder010
+    2300118: Cylinder011
+    2300120: Cylinder012
+    2300122: Cylinder013
+    2300124: Cylinder014
+    2300126: Line001
+    2300128: Line002
+    2300130: Line003
+    2300132: Line004
+    2300134: Object009
+    2300136: Object010
+    2300138: Object011
+    2300140: Object012
+    2300142: Plane001
+    2300144: Plane002
+    2300146: Plane003
+    2300148: Plane004
+    2300150: Plane005
+    2300152: Plane006
+    2300154: Plane007
+    2300156: plant
     3300000: bank_office_chair
     3300002: bank_office_chair1
     3300004: bank_office_furniture_01
@@ -109,6 +277,60 @@ ModelImporter:
     3300044: bank_office_furniture_25
     3300046: bank_office_furniture_26
     3300048: bank_office_wall
+    3300050: bank_office_bank_office_furniture_01_bank_office_furniture
+    3300052: bank_office_bank_office_furniture_bank_office_furniture_02
+    3300054: bank_office_bank_office_furniture_bank_office_furniture_027
+    3300056: bank_office_bank_office_furniture_bank_office_furniture_03
+    3300058: bank_office_bank_office_furniture_bank_office_furniture_04
+    3300060: bank_office_bank_office_furniture_bank_office_furniture_05
+    3300062: bank_office_bank_office_furniture_bank_office_furniture_06
+    3300064: bank_office_bank_office_furniture_bank_office_furniture_07
+    3300066: bank_office_bank_office_furniture_bank_office_furniture_08
+    3300068: bank_office_bank_office_furniture_bank_office_furniture_09
+    3300070: bank_office_bank_office_furniture_bank_office_furniture_10
+    3300072: bank_office_bank_office_furniture_bank_office_furniture_11
+    3300074: bank_office_bank_office_furniture_bank_office_furniture_12
+    3300076: bank_office_bank_office_furniture_bank_office_furniture_13
+    3300078: bank_office_bank_office_furniture_bank_office_furniture_14
+    3300080: bank_office_bank_office_furniture_bank_office_furniture_15
+    3300082: bank_office_bank_office_furniture_bank_office_furniture_16
+    3300084: bank_office_bank_office_furniture_bank_office_furniture_17
+    3300086: bank_office_bank_office_furniture_bank_office_furniture_18
+    3300088: bank_office_bank_office_furniture_bank_office_furniture_19
+    3300090: bank_office_bank_office_furniture_bank_office_furniture_20
+    3300092: bank_office_bank_office_furniture_bank_office_furniture_21
+    3300094: bank_office_bank_office_furniture_bank_office_furniture_23
+    3300096: bank_office_bank_office_furniture_bank_office_furniture_24
+    3300098: bank_office_bank_office_furniture_bank_office_furniture_25
+    3300100: bank_office_bank_office_furniture_bank_office_furniture_26
+    3300102: bank_office_wall_bank_office
+    3300104: Box001
+    3300106: Box003
+    3300108: Box005
+    3300110: Box006
+    3300112: Box007
+    3300114: Cylinder009
+    3300116: Cylinder010
+    3300118: Cylinder011
+    3300120: Cylinder012
+    3300122: Cylinder013
+    3300124: Cylinder014
+    3300126: Line001
+    3300128: Line002
+    3300130: Line003
+    3300132: Line004
+    3300134: Object009
+    3300136: Object010
+    3300138: Object011
+    3300140: Object012
+    3300142: Plane001
+    3300144: Plane002
+    3300146: Plane003
+    3300148: Plane004
+    3300150: Plane005
+    3300152: Plane006
+    3300154: Plane007
+    3300156: plant
     4300000: bank_office_wall
     4300002: bank_office_furniture_01
     4300004: bank_office_furniture_02
@@ -134,6 +356,60 @@ ModelImporter:
     4300044: bank_office_furniture_26
     4300046: bank_office_chair
     4300048: bank_office_chair1
+    4300050: bank_office_wall_bank_office
+    4300052: bank_office_bank_office_furniture_01_bank_office_furniture
+    4300054: bank_office_bank_office_furniture_bank_office_furniture_02
+    4300056: bank_office_bank_office_furniture_bank_office_furniture_03
+    4300058: bank_office_bank_office_furniture_bank_office_furniture_04
+    4300060: bank_office_bank_office_furniture_bank_office_furniture_05
+    4300062: bank_office_bank_office_furniture_bank_office_furniture_06
+    4300064: bank_office_bank_office_furniture_bank_office_furniture_07
+    4300066: bank_office_bank_office_furniture_bank_office_furniture_08
+    4300068: bank_office_bank_office_furniture_bank_office_furniture_09
+    4300070: bank_office_bank_office_furniture_bank_office_furniture_10
+    4300072: bank_office_bank_office_furniture_bank_office_furniture_11
+    4300074: bank_office_bank_office_furniture_bank_office_furniture_12
+    4300076: bank_office_bank_office_furniture_bank_office_furniture_13
+    4300078: bank_office_bank_office_furniture_bank_office_furniture_14
+    4300080: bank_office_bank_office_furniture_bank_office_furniture_15
+    4300082: bank_office_bank_office_furniture_bank_office_furniture_16
+    4300084: bank_office_bank_office_furniture_bank_office_furniture_17
+    4300086: bank_office_bank_office_furniture_bank_office_furniture_18
+    4300088: bank_office_bank_office_furniture_bank_office_furniture_19
+    4300090: bank_office_bank_office_furniture_bank_office_furniture_20
+    4300092: bank_office_bank_office_furniture_bank_office_furniture_21
+    4300094: bank_office_bank_office_furniture_bank_office_furniture_23
+    4300096: bank_office_bank_office_furniture_bank_office_furniture_24
+    4300098: bank_office_bank_office_furniture_bank_office_furniture_25
+    4300100: bank_office_bank_office_furniture_bank_office_furniture_26
+    4300102: Box001
+    4300104: Plane001
+    4300106: Plane002
+    4300108: Plane003
+    4300110: Cylinder009
+    4300112: Cylinder010
+    4300114: Cylinder011
+    4300116: plant
+    4300118: Cylinder012
+    4300120: Line001
+    4300122: Cylinder013
+    4300124: Cylinder014
+    4300126: Line002
+    4300128: Box003
+    4300130: Object009
+    4300132: Line003
+    4300134: Box005
+    4300136: Line004
+    4300138: Object010
+    4300140: Plane004
+    4300142: Plane005
+    4300144: Plane006
+    4300146: Plane007
+    4300148: Object011
+    4300150: Object012
+    4300152: Box006
+    4300154: Box007
+    4300156: bank_office_bank_office_furniture_bank_office_furniture_027
   externalObjects: {}
   materials:
     importMaterials: 1

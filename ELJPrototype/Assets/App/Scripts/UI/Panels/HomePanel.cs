@@ -35,4 +35,17 @@ public class HomePanel : BasicPanelNavigation
         }
 
     }
+
+    public void LoadSceneHotel()
+    {
+        if (ScenesManager.Instance != null)
+        {
+            ScenesManager.Instance.LoadScene("HotelMenu_2D");
+        }
+        else
+        {
+            Debug.Log("NULL...............");
+        }
+
+    }
 }

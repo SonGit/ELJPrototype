@@ -27,34 +27,34 @@ public class HotelMenu : BasicMenu
             // Question 1
             case 1:
 
-                SetupQuestion("こんにちは", "Kon'nichiwa");
+                SetupQuestion("いらっしゃいませ", "Irasshaimase");
 
                 break;
 
             // Question 2
             case 2:
 
-                SetupQuestion("お飲み物は何にしますか", "O nomimono wa nani ni shimasu ka");
+                SetupQuestion("部屋をご予約になりますか", "Heya o goyoyaku ni narimasu ka");
 
                 break;
 
             // Question 3 
             case 3:
 
-                SetupQuestion("ほかにございますか", "Hoka ni gozaimasu ka");
+                SetupQuestion("どんな部屋を借りたいですか", "Don'na heya o karitai desu ka");
 
                 break;
 
             // Question 4 
             case 4:
 
-                SetupQuestion("どうもありがとうございました。10分おまちください", "Dōmo arigatōgozaimashita. Juppun Omachi kudasai.");
+                SetupQuestion("客室料金は50円です", "Kyakushitsu ryōkin wa 50-En desu");
 
                 break;
 
             default:
 
-                SetupQuestion("こんにちは", "Kon'nichiwa");
+                RestartAll();
                 break;
         }
     }
@@ -77,14 +77,14 @@ public class HotelMenu : BasicMenu
             // Answers 2
             case 2:
 
-                SetupAnswer("すみません、コーヒーにします", "Sumimasen, Kōhī ni shimasu");
+                SetupAnswer("一室を借りたいです", "Isshitsu o karitai desu");
 
                 break;
 
             // Answers 3
             case 3:
 
-                SetupAnswer("ハンバーガー 1つ お願いします", "Hanbāgā hitotsu onegaishimasu");
+                SetupAnswer("大きい部屋を借りたいです", "Ōkī heya o karitai desu");
 
                 break;
 
@@ -98,7 +98,6 @@ public class HotelMenu : BasicMenu
 
             default:
 
-                SetupAnswer("こんにちは", "Kon'nichiwa");
                 break;
         }
     }

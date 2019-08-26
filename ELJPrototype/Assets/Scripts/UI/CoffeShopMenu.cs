@@ -62,7 +62,8 @@ public class CoffeShopMenu : BasicMenu
 
             default:
 
-                SetupQuestion("こんにちは", "Kon'nichiwa");
+                RestartAll();
+
                 break;
         }
     }
@@ -106,7 +107,7 @@ public class CoffeShopMenu : BasicMenu
 
             default:
 
-                SetupAnswer("こんにちは", "Kon'nichiwa");
+                
                 break;
         }
     }

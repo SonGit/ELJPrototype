@@ -30,6 +30,11 @@ public class SettingsMenu : MonoBehaviour
                 basicMenu = BankMenu.Instance;
             }
 
+            if (HotelMenu.Instance != null)
+            {
+                basicMenu = HotelMenu.Instance;
+            }
+
         }
     }
 
